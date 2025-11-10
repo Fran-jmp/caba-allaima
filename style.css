@@ -1027,16 +1027,16 @@ body {
 
   /* Tamaño del contenedor circular del logo */
   .hero-logo {
-    width: 160px;
-    height: 160px;
+    width: 130px;
+    height: 130px;
     top: 70px;                 /* ajusta si hace falta subir/bajar */
     transform: translateX(-50%);
   }
 
   /* Tamaño del logo interior */
   .hero-logo img {
-    width: 110px;
-    height: 110px;
+    width: 130px;
+    height: 130px;
     margin-top: 0;
   }
 
