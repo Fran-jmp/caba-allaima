@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cabañas del Llaima</title>
+
+  <!-- Fuentes Google -->
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+  <img src="img/logotipo1.png" alt="Logo Cabañas del Llaima" class="logo-img">
+  <span class="logo-text">Cabaña del Llaima</span>
+</div>
+
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#cabanas">Nuestras Cabañas</a></li>
+          <li><a href="#entorno">Entorno Natural</a></li>
+          <li><a href="#experiencias">Experiencias</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a href="#reservas" class="btn btn-primary btn-header">
+        Reserva ahora
+      </a>
+
+      <!-- Botón menú móvil -->
+      <button class="menu-toggle" aria-label="Abrir menú">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+  <div class="hero-overlay"></div>
+
+  <!-- Logo en el Hero -->
+  <div class="hero-logo">
+    <img src="img/logotipo1.png" alt="Logo Cabañas del Llaima">
+  </div>
+
+  <div class="hero-content container">
+    <h1>BIENVENIDOS A LA NATURALEZA DEL LLAIMA</h1>
+    <p class="hero-subtitle">Descansa donde la montaña toca el cielo.</p>
+    <div class="hero-buttons">
+      <a href="#cabanas" class="btn btn-primary">Explora tu próxima escapada</a>
+      <a href="#cabanas" class="btn btn-outline">Ver cabañas</a>
+    </div>
+    <p class="hero-location">
+      Sector Santa María de Llaima · Melipeuco · Chile
+    </p>
+  </div>
+</section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section class="section" id="sobre">
+  <div class="container section-grid">
+    <div class="section-text">
+      <h2>Un refugio entre montañas</h2>
+      <div class="section-divider"></div>
+      <p>
+        Ubicadas en el sector Santa María de Llaima, a solo minutos de Melipeuco, 
+        nuestras cabañas son un refugio de calma en medio de la cordillera. 
+        Aquí despiertas con el sonido del río, el canto de las aves y la vista 
+        imponente del volcán Llaima.
+      </p>
+      <p>
+        Cada cabaña está pensada para que solo te preocupes de descansar: 
+        calefacción, cocina equipada y un entorno seguro donde la naturaleza 
+        es la protagonista.
+      </p>
+      <ul class="features-list">
+        <li>✔ Cabañas equipadas para todo el año</li>
+        <li>✔ Acceso directo al río y senderos privados</li>
+        <li>✔ Entorno silencioso, ideal para desconectarse de la ciudad</li>
+      </ul>
+    </div>
+    <div class="section-image-wrapper">
+<img src="img/vista-exterior-frontal2.jpg" 
+     alt="Un refugio en la montaña" 
+     class="refugio-img">
+    </div>
+  </div>
+</section>
+
+  <!-- NUESTRAS CABAÑAS -->
+  <section class="section section-light" id="cabanas">
+    <div class="container">
+      <h2 class="section-title center">Nuestra Cabaña</h2>
+      <p class="section-subtitle center">
+        El espacio perfecto para tu descanso.
+      </p>
+
+      <div class="cards-grid">
+        <!-- Cabaña 1 -->
+        <article class="card">
+          <div class="card-image-wrapper">
+            <img src="img/cabañainterior1.png" alt="Cabaña Arrayán" class="card-image">
+          </div>
+          <div class="card-body">
+            <h3>Espacios Amplios y Acogedores</h3>
+            <p class="card-meta">Ideal para familias · 5 personas</p>
+            <p class="card-text">
+              Cabaña de madera con dormitorio matrimonial con suite, 3 dormitorios, 2 baños, cocina equipada y hermosas vistas a montañas, bosque nativo y el imponente Volcan Llaima.
+            </p>
+            <button class="btn-card">Ver detalles</button>
+          </div>
+        </article>
+
+        <!-- Cabaña 2 -->
+        <article class="card">
+          <div class="card-image-wrapper">
+            <img src="img/jacuzzi1.png" alt="Servicio de Jacuzzi" class="card-image">
+          </div>
+          <div class="card-body">
+            <h3>Servicio de Jacuzzi</h3>
+            <p class="card-meta">Cálida y familiar · 4 personas</p>
+            <p class="card-text">
+             Un merecido relajo en medio de un entorno natural, ideal para recomponer mente y cuerpo.
+            </p>
+            <button class="btn-card">Ver detalles</button>
+          </div>
+        </article>
+
+        <!-- Cabaña 3 -->
+        <article class="card">
+          <div class="card-image-wrapper">
+            <img src="img/panoramas1.png" alt="Ubicación Estratégica" class="card-image">
+          </div>
+          <div class="card-body">
+            <h3>Ubicación Estratégica</h3>
+            <p class="card-meta">Amplia, con vista al volcán · 6 personas</p>
+            <p class="card-text">
+              Nuestra cabaña esta ubicada en un punto estretégico para realizar variadas actividades presentes en los alrrededores del sector.
+            </p>
+            <button class="btn-card">Ver detalles</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENTORNO NATURAL -->
+  <section class="section section-forest" id="entorno">
+    <div class="container">
+      <h2 class="section-title center light">Un entorno que inspira</h2>
+      <p class="section-subtitle center light">
+        Bosques nativos, ríos cristalinos y cielos llenos de estrellas.
+      </p>
+
+      <div class="entorno-grid">
+        <div class="entorno-img">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Bosque de araucarias">
+        </div>
+        <div class="entorno-img">
+          <img src="https://images.unsplash.com/photo-1523978591478-c753949ff840?auto=format&fit=crop&w=800&q=80" alt="Río cristalino">
+        </div>
+        <div class="entorno-img">
+          <img src="https://images.unsplash.com/photo-1544989164-31dc3c645987?auto=format&fit=crop&w=800&q=80" alt="Cielo estrellado">
+        </div>
+        <div class="entorno-img">
+          <img src="https://images.unsplash.com/photo-1544989164-31dc3c645987?auto=format&fit=crop&w=800&q=80" alt="Cielo estrellado">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIAS -->
+  <section class="section" id="experiencias">
+    <div class="container">
+      <h2 class="section-title center">Vive la montaña</h2>
+      <p class="section-subtitle center">
+        Diseñamos experiencias para que conectes con la naturaleza.
+      </p>
+
+      <div class="cards-grid experiences-grid">
+        <article class="card card-simple">
+          <div class="experience-icon">🚶‍♂️</div>
+          <h3>Disfruta la Naturaleza</h3>
+	  <p>Comparte un amanecer y atardecer en el Llaima, fogata en la noche, caminatas, sonido del rio, desconeccion del ruido de la ciudad.</p>
+        </article>
+
+        <article class="card card-simple">
+          <div class="experience-icon">🏞️</div>
+          <h3>Avistamiento de flora y fauna</h3>
+	<p>Observa aves, zorros y otras especies de la Araucanía andina en su entorno natural.</p>
+        </article>
+
+        <article class="card card-simple">
+          <div class="experience-icon">🔥</div>
+          <h3>Actividades recreativas/deportivas</h3>
+	<p>Realiza Cabalgatas, Trekking, Canopy, Pesca, Termas, entre muchas actividades más.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVAS -->
+  <section class="section section-light" id="reservas">
+    <div class="container small">
+      <h2 class="section-title center">Planifica tu estadía</h2>
+      <p class="section-subtitle center">
+        Cuéntanos cuándo quieres visitarnos y te enviaremos disponibilidad y valores.
+      </p>
+
+      <form class="form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="llegada">Fecha de llegada</label>
+            <input type="date" id="llegada" name="llegada" required>
+          </div>
+          <div class="form-group">
+            <label for="salida">Fecha de salida</label>
+            <input type="date" id="salida" name="salida" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="personas">Número de personas</label>
+            <select id="personas" name="personas">
+              <option value="2">2 personas</option>
+              <option value="3">3 personas</option>
+              <option value="4">4 personas</option>
+              <option value="5">5 personas</option>
+              <option value="6">6 personas</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="comentarios">Comentarios</label>
+            <textarea id="comentarios" name="comentarios" rows="3" placeholder="Necesidades especiales, tipo de cabaña, etc."></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary form-btn">
+          Enviar solicitud
+        </button>
+
+        <p class="form-note">
+          O si prefieres, escríbenos directamente por WhatsApp.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section" id="contacto">
+  <div class="container section-grid">
+    <div class="section-text">
+      <h2>Contacto y cómo llegar</h2>
+      <div class="section-divider"></div>
+      <p>
+        Estamos ubicados en el sector Santa María de Llaima, a 12 km de Melipeuco,
+        en plena Araucanía andina. Si tienes dudas sobre el camino, disponibilidad
+        o valores, escríbenos y te ayudamos a planificar tu viaje.
+      </p>
+      <ul class="contact-list">
+        <li><strong>Dirección:</strong> Km 12, sector Santa María de Llaima, Melipeuco, Región de La Araucanía.</li>
+        <li><strong>Teléfono:</strong> +56 9 1234 5678</li>
+        <li><strong>Correo:</strong> reservas@cabanasdelllaima.cl</li>
+      </ul>
+      <div class="contact-cta">
+        <p>¿Tienes dudas rápidas?</p>
+        <a href="#" class="btn btn-primary btn-contacto">Escribir por WhatsApp</a>
+      </div>
+      <div class="socials">
+        <span>Síguenos:</span>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+    <div class="section-image-wrapper">
+      <!-- Mapa ficticio (puedes reemplazar por Google Maps real) -->
+      <iframe
+        class="map"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-72.0%2C-38.9%2C-71.4%2C-38.5&layer=mapnik"
+        style="border:0"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+ <footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <h3>Cabañas del Llaima</h3>
+      <p>Sector Santa María de Llaima, Melipeuco · Región de La Araucanía</p>
+      <p>© 2025 Cabañas del Llaima. Todos los derechos reservados.</p>
+    </div>
+
+    <div class="footer-right">
+      <p>Web desarrollada por <strong>Factor Visible</strong></p>
+      <div class="footer-links">
+        <a href="#hero">Inicio</a>
+        <span>·</span>
+        <a href="#cabanas">Cabañas</a>
+        <span>·</span>
+        <a href="#reservas">Reservas</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- JS simple para menú móvil -->
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    const headerBtn = document.querySelector('.btn-header');
+
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('nav-open');
+      headerBtn.classList.toggle('btn-header-hidden');
+    });
+
+    // Scroll suave
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (!target) return;
+        window.scrollTo({
+          top: target.offsetTop - 80,
+          behavior: 'smooth'
+        });
+        nav.classList.remove('nav-open');
+        headerBtn.classList.remove('btn-header-hidden');
+      });
+    });
+  <script>
+  // === MENÚ ===
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
+  const headerBtn = document.querySelector('.btn-header');
+
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('nav-open');
+    if (headerBtn) {
+      headerBtn.classList.toggle('btn-header-hidden');
+    }
+  });
+</script>
+
+<script>
+  // === ANIMACIÓN VARIADA DE SECCIONES CON DELAY EN CASCADA ===
+  const sections = document.querySelectorAll('.section');
+
+  // Efectos que se repetirán: abajo, izquierda, derecha
+  const effects = ['fade-up', 'fade-left', 'fade-right'];
+
+  sections.forEach((section, i) => {
+    const effect = effects[i % effects.length];
+    section.classList.add(effect);
+
+    // Delay en cascada: 0.1s, 0.2s, 0.3s, etc.
+    const delay = i * 0.2; // ajusta este valor si quieres más o menos delay
+    section.style.transitionDelay = `${delay}s`;
+  });
+
+  // Activar animación cuando la sección entra en pantalla
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  sections.forEach(section => observer.observe(section));
+</script>
+<!-- Botón flotante de Instagram -->
+<a href="https://www.instagram.com/francisco.jmp/"
+   class="btn-instagram-float"
+   target="_blank"
+   aria-label="Instagram">
+  <img src="img/icono-insta1.png" alt="Instagram">
+</a>
+
+<!-- === BOTÓN FLOTANTE DE WHATSAPP === -->
+<a href="https://wa.me/56931030367" 
+   class="btn-whatsapp" 
+   target="_blank" 
+   aria-label="Chat en WhatsApp">
+  <img src="img/icono-wtp1.png" alt="WhatsApp">
+</a>
+
+</body>
+</html>
+

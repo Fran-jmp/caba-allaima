@@ -1,0 +1,11 @@
+<svg width="140" height="32" viewBox="0 0 140 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Montículo base -->
+  <path d="M5 26 C 20 18, 40 18, 60 26 L 5 26 Z" fill="#1c3b2e" />
+  <!-- Volcán -->
+  <path d="M28 25 L41 6 L54 25 Z" fill="#f9f5ec" />
+  <path d="M33 15 L41 8 L49 15 Z" fill="#1c3b2e" />
+  <!-- Nieve volcán -->
+  <path d="M36 11 L41 7 L46 11 Z" fill="#ffffff" />
+  <!-- Sol -->
+  <circle cx="65" cy="10" r="4" fill="#f5c77b" />
+</svg>
