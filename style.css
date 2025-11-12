@@ -1312,3 +1312,64 @@ body {
 .hero {
   padding-top: 90px; /* ajusta según el alto del header */
 }
+/* ===== SOLO MÓVIL EN VERTICAL ===== */
+@media (max-width: 768px) and (orientation: portrait) {
+
+  /* Panel lateral desde la IZQUIERDA */
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;                 /* anclado a la izquierda */
+    height: 100vh;
+    width: 80vw;             /* ancho del panel (ajustable) */
+    background: rgba(0,0,0,0.95);
+    padding: 80px 20px 20px; /* margen superior para no tapar el header */
+    transform: translateX(-100%);  /* oculto fuera de la pantalla hacia la IZQ */
+    transition: transform 0.25s ease;
+    display: block;          /* importante: el drawer controla visibilidad con transform */
+    z-index: 9999;
+  }
+
+  .nav.open {
+    transform: translateX(0);   /* entra desde la IZQUIERDA */
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-list li { list-style: none; }
+  .nav-list a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  /* botón hamburguesa visible encima del drawer */
+  .menu-toggle {
+    display: block;
+    position: relative;
+    z-index: 10000;
+    background: none;
+    border: 0;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* si tienes botón "Reserva ahora", suele ocultarse en móvil */
+  .btn-header { display: none; }
+}
+
+/* HORIZONTAL (landscape) o escritorio: mantén tu comportamiento actual.
+   Ejemplo típico (ya lo tenías):
+@media (max-width: 768px) and (orientation: landscape) {
+  .nav { position:absolute; top:100%; right:0; left:auto; display:none; }
+  .nav.open { display:block; }
+}
+*/
