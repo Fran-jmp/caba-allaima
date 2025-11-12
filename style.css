@@ -17,12 +17,12 @@ body {
 
 * {
   box-sizing: border-box;
-}
-
-html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;  /* por si algo se sale a lo ancho */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -40,15 +40,19 @@ body {
 }
 
 /* HEADER */
-header {
-  position: fixed;       /* o absolute, si prefieres */
+.header {
+  position: fixed;  /* ANTES estaba absolute */
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
-  background: transparent;   /* SIN color de fondo */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0)
+  );
+  backdrop-filter: blur(2px);
+  z-index: 100;
 }
-
 /* === EFECTO DE BRILLO SUAVE SIN PULSO === */
 .nav-list a {
   display: inline-block;
