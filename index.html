@@ -24,6 +24,13 @@
     ☰
   </div>
 
+    <!-- BOTÓN HAMBURGUESA -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
       <nav class="nav">
         <ul class="nav-list">
           <li><a href="#hero">Inicio</a></li>
@@ -423,6 +430,17 @@ document.addEventListener('DOMContentLoaded', function() {
     navMenu.classList.toggle('show-menu');
   });
 });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuToggle.addEventListener('click', function() {
+      navMenu.classList.toggle('show-menu');
+    });
+  });
 </script>
 
 </body>

@@ -1106,3 +1106,106 @@ body {
 .show-menu {
   display: flex;
 }
+
+/* HEADER GENERAL */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;       /* sin fondo, se ve la portada */
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+/* LOGO */
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.logo-text {
+  font-family: "Playfair Display", serif; /* o la que uses */
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/* MENÚ EN ESCRITORIO */
+.nav-menu {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* BOTÓN HAMBURGUESA: OCULTO EN ESCRITORIO */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Líneas del icono */
+.menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: 4px 0;
+  background: #ffffff;
+}
+
+/* ===== VERSIÓN MÓVIL ===== */
+@media (max-width: 768px) {
+
+  /* En móvil: mostrar botón, ocultar menú al inicio */
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.85);
+    flex-direction: column;
+    padding: 16px;
+    gap: 12px;
+    display: none;          /* 👈 OCULTO POR DEFECTO EN MÓVIL */
+  }
+
+  .nav-menu a {
+    color: #ffffff;
+  }
+
+  /* Clase que se agrega al hacer click para mostrar el menú */
+  .nav-menu.show-menu {
+    display: flex;          /* 👈 SE MUESTRA SOLO CUANDO HAY show-menu */
+  }
+}
+
+/* IMPORTANTE PARA EL HERO (que no quede tapado) */
+.hero {
+  padding-top: 90px;   /* ajusta según el alto real del header */
+}
