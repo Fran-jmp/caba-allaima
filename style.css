@@ -17,12 +17,12 @@ body {
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;  /* por si algo se sale a lo ancho */
 }
 
 body {
@@ -40,19 +40,15 @@ body {
 }
 
 /* HEADER */
-.header {
-  position: fixed;  /* ANTES estaba absolute */
+header {
+  position: fixed;       /* o absolute, si prefieres */
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0)
-  );
-  backdrop-filter: blur(2px);
-  z-index: 100;
+  z-index: 1000;
+  background: transparent;   /* SIN color de fondo */
 }
+
 /* === EFECTO DE BRILLO SUAVE SIN PULSO === */
 .nav-list a {
   display: inline-block;
@@ -1078,5 +1074,11 @@ body {
     background-position: center top;
     background-attachment: scroll;
     min-height: 100vh;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    background: transparent;
   }
 }
