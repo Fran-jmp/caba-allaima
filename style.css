@@ -1079,3 +1079,29 @@ body {
   }
 }
 
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.nav-menu a {
+  color: #fff;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  font-size: 26px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.show-menu {
+  display: flex;
+}
