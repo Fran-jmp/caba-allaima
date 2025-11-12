@@ -1312,26 +1312,33 @@ body {
 .hero {
   padding-top: 90px; /* ajusta según el alto del header */
 }
-/* ===== SOLO MÓVIL EN VERTICAL ===== */
+/* SOLO MÓVIL VERTICAL */
 @media (max-width: 768px) and (orientation: portrait) {
-
-  /* Panel lateral desde la IZQUIERDA */
   .nav {
     position: fixed;
     top: 0;
-    left: 0;                 /* anclado a la izquierda */
+    left: 0;
     height: 100vh;
-    width: 80vw;             /* ancho del panel (ajustable) */
-    background: rgba(0,0,0,0.95);
-    padding: 80px 20px 20px; /* margen superior para no tapar el header */
-    transform: translateX(-100%);  /* oculto fuera de la pantalla hacia la IZQ */
-    transition: transform 0.25s ease;
-    display: block;          /* importante: el drawer controla visibilidad con transform */
+    width: 80vw;
+    /* 👇 Totalmente oculto antes del click */
+    transform: translateX(-105%);   /* más de 100% para que no asome nada */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;           /* no recibe toques mientras está cerrado */
+    transition: transform .25s ease, opacity .25s ease, visibility 0s .25s;
     z-index: 9999;
+    /* sin fondo mientras está cerrado */
+    background: transparent;
+    padding: 80px 20px 20px;
   }
 
   .nav.open {
-    transform: translateX(0);   /* entra desde la IZQUIERDA */
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: transform .25s ease, opacity .25s ease;
+    background: rgba(0,0,0,0.95);   /* 👈 fondo solo cuando está abierto */
   }
 
   .nav-list {
@@ -1341,28 +1348,18 @@ body {
     margin: 0;
     padding: 0;
   }
-
   .nav-list li { list-style: none; }
   .nav-list a {
-    color: #fff;
-    font-size: 18px;
-    text-decoration: none;
-    font-weight: 600;
+    color: #fff; font-size: 18px; font-weight: 600; text-decoration: none;
   }
 
-  /* botón hamburguesa visible encima del drawer */
   .menu-toggle {
     display: block;
     position: relative;
     z-index: 10000;
-    background: none;
-    border: 0;
-    font-size: 28px;
-    color: #fff;
-    cursor: pointer;
+    background: none; border: 0; color: #fff; font-size: 28px; cursor: pointer;
   }
 
-  /* si tienes botón "Reserva ahora", suele ocultarse en móvil */
   .btn-header { display: none; }
 }
 
