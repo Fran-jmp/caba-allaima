@@ -1209,3 +1209,106 @@ body {
 .hero {
   padding-top: 90px;   /* ajusta según el alto real del header */
 }
+
+/* HEADER GENERAL */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent; /* para que se vea la portada detrás */
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 16px;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.logo-text {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* MENÚ ESCRITORIO */
+.nav {
+  display: block;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* BOTÓN MENÚ (OCULTO EN PC) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* ===== VERSIÓN MÓVIL ===== */
+@media (max-width: 768px) {
+
+  /* Ocultar menú y botón de reserva en móvil */
+  .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;              /* 👈 OCULTO POR DEFECTO */
+  }
+
+  .nav.open {
+    display: block;             /* 👈 SE MUESTRA CUANDO TIENE .open */
+  }
+
+  .nav-list {
+    flex-direction: column;
+    padding: 12px 16px;
+    gap: 12px;
+  }
+
+  .btn-header {
+    display: none;              /* si quieres esconder este botón en móvil */
+  }
+
+  .menu-toggle {
+    display: block;             /* 👈 SOLO SE VE EN MÓVIL */
+  }
+}
+
+/* PARA QUE EL HERO NO QUEDE TAPADO POR EL HEADER */
+.hero {
+  padding-top: 90px; /* ajusta según el alto del header */
+}
