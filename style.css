@@ -41,19 +41,23 @@ body {
 }
 
 /* HEADER */
+/* HEADER */
 .header {
-  position: fixed;  /* ANTES estaba absolute */
+  position: fixed;  /* se mantiene arriba incluso al hacer scroll */
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1000; /* subí un poco para evitar solapamientos */
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0)
   );
   backdrop-filter: blur(2px);
-  z-index: 100;
+  margin: 0;
+  padding: 0;
 }
+
 /* === EFECTO DE BRILLO SUAVE SIN PULSO === */
 .nav-list a {
   display: inline-block;
@@ -210,22 +214,23 @@ body {
 /* === HERO SECTION === */
 .hero {
   position: relative;
-  min-height: 100vh; /* Asegura que cubra toda la pantalla */
-  background-image: url('img/camino-entrada1.jpg'); /* usa el nombre de tu archivo */
-  background-size: cover; /* Cubre toda la pantalla sin deformar */
+  min-height: 100vh;
+  background-image: url('img/camino-entrada1.jpg');
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: scroll; /* Arregla el problema en móviles */
+  background-attachment: scroll;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding-left: 5%;
-  padding-top: 110px;
+  padding-top: 0;    /* 👈 elimina el 110px que empujaba la imagen hacia abajo */
   margin-top: 0;
   width: 100%;
   overflow: hidden;
 }
+
 
 .hero-overlay {
   position: absolute;
