@@ -1074,9 +1074,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  .hero {
-    background-position: center top;
-    background-attachment: scroll;
-    min-height: 100vh;
+  header {
+    background: transparent;
   }
 }
+
