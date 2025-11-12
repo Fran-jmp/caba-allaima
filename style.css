@@ -1332,14 +1332,14 @@ body {
     padding: 80px 20px 20px;
   }
 
-  .nav.open {
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transition: transform .25s ease, opacity .25s ease;
-    background: rgba(0,0,0,0.95);   /* 👈 fondo solo cuando está abierto */
-  }
+.nav.open {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: transform .25s ease, opacity .25s ease;
+  background: rgba(0, 0, 0, 0.7);   /* 👈 negro transparente (0.7 puedes ajustar) */
+}
 
   .nav-list {
     display: flex;
