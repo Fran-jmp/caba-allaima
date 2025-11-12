@@ -20,6 +20,9 @@
   <span class="logo-text">Cabaña del Llaima</span>
 </div>
 
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
 
       <nav class="nav">
         <ul class="nav-list">
@@ -410,6 +413,17 @@
    aria-label="Chat en WhatsApp">
   <img src="img/icono-wtp1.png" alt="WhatsApp">
 </a>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  menuToggle.addEventListener('click', function() {
+    navMenu.classList.toggle('show-menu');
+  });
+});
+</script>
 
 </body>
 </html>
